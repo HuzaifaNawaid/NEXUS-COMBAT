@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Rajdhani", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+  font-family: 'Rajdhani', sans-serif;
+  color: #fff;
+  user-select: none;
+  cursor: auto;
+}
+
+body.playing {
+  cursor: none;
+}
+
+@keyframes lb {
+  from {
+    filter: drop-shadow(0 0 30px #ff440055);
+  }
+  to {
+    filter: drop-shadow(0 0 80px #ff8800aa);
+  }
+}
+
+@keyframes spP {
+  from {
+    box-shadow: 0 0 8px #ffcc0077;
+  }
+  to {
+    box-shadow: 0 0 25px #ffff00cc;
+  }
+}
+
+@keyframes kfA {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes dfa {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-65px);
+  }
+}
+
+@keyframes dp {
+  from {
+    filter: drop-shadow(0 0 18px #ff220055);
+  }
+  to {
+    filter: drop-shadow(0 0 55px #ff2200cc);
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
